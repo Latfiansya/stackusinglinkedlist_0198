@@ -101,6 +101,15 @@ int main()
 			}
 			break;
 
+		case 3:
+			if (!stack.isEmpty()) {
+				stack.peek();
+			}
+			else {
+				cout << "Stack is empty. No top value" << endl;
+			}
+			break;
+
 		default:
 			cout << "Invalid choice. Try again." << endl;
 			break;
