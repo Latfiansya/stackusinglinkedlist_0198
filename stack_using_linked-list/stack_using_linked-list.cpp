@@ -84,10 +84,19 @@ int main()
 		cout << "Enter your choice: \n";
 		cin >> choice;
 
-		switch (switch_on)
+		switch (choice)
 		{
+		case 1:
+			cout << "Enter the value to push: ";
+			cin >> value;
+			stack.push(value);
+			break;
+		
 		default:
+			cout << "Invalid choice. Try again." << endl;
 			break;
 		}
+		cout << endl;
 	}
+	return 0;
 }
